@@ -8,7 +8,7 @@
         "server-rendered",
         "astrx-module"
     ],
-    "homepage": "https://github.com/hydrastro/astrx",
+    "homepage": "https://github.com/Vxmdzhb/module-canary",
     "require": {
         "php": ">=8.4",
         "ext-pdo": "*",
@@ -20,5 +20,19 @@
         "psr-4": {
             "AstrX\\Canary\\": ""
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Vxmdzhb/cms"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Vxmdzhb/framework"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Vxmdzhb/library"
+        }
+    ]
 }
