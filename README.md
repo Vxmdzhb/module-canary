@@ -2,6 +2,8 @@
 
 Warrant canary page with its admin editor — the **Canary** module of [AstrX](https://github.com/Vxmdzhb/astrx).
 
+![A signed warrant canary](docs/screenshot.png)
+
 - Module key: `canary` (switch it on in the site's `resources/config/Modules.config.php`)
 - Pages: `admin_canary`, `canary`
 - Requires: `astrx/cms`, `astrx/framework`, `astrx/library`
