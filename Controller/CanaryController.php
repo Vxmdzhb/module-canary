@@ -11,18 +11,17 @@ use PDO;
 use AstrX\Kernel\AbstractController;
 
 /**
- * Public warrant-canary page (/canary).
+ * Public warrant canary page (/canary).
  *
- * Renders the operator's current, dated attestation VERBATIM. The operator signs
- * it OFFLINE (e.g. PGP/minisign) and pastes the signed block via the admin
- * editor, so no signing key ever lives on the server — the whole point of a
- * canary is that a server seizure can't forge a fresh one. The page shows the
- * last-attested date and a prominent STALE warning once the attestation is older
- * than the configured interval: a canary that silently stops being refreshed is
- * itself the signal. 404s when nothing is published.
+ * Shows the operator's current, dated statement exactly as pasted. The
+ * operator signs it offline (e.g. PGP or minisign) and pastes the signed block
+ * into the admin editor, so no signing key lives on the server: a seized
+ * server can't produce a fresh canary. Once the statement is older than the
+ * configured interval the page shows a clear STALE warning, because a canary
+ * that stops being refreshed is the signal. 404 when nothing is published.
  *
- * Storage: the `site_config` KV table (canary_* keys), like AdminNotesController —
- * no new table, no crypto on the server.
+ * Stored in the `site_config` key-value table (canary_* keys); no new table,
+ * no crypto on the server.
  */
 final class CanaryController extends AbstractController
 {
