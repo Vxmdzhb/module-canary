@@ -1,6 +1,7 @@
 {
     "name": "astrx/module-canary",
     "description": "Warrant canary page with its admin editor",
+    "license": "LicenseRef-DoWhatever",
     "type": "astrx-module",
     "keywords": [
         "astrx",
