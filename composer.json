@@ -21,6 +21,7 @@
         "astrx/kernel": "self.version",
         "astrx/module": "self.version",
         "astrx/result": "self.version",
+        "astrx/routing": "self.version",
         "astrx/session": "self.version",
         "astrx/template": "self.version"
     },
